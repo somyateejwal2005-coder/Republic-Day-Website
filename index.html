@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Republic Day 🇮🇳</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#e9f8ec;
+  color:#123;
+}
+
+/* HEADER */
+header{
+  background:#138808;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+.logo{color:white;font-size:24px;font-weight:800;}
+nav a{margin-left:20px;text-decoration:none;color:white;font-weight:600;}
+
+/* HERO */
+.hero{
+  display:flex;
+  flex-wrap:wrap;
+  padding:60px 40px;
+  align-items:center;
+  justify-content:space-between;
+}
+.hero-text h1{font-size:38px;}
+.hero-buttons button{
+  margin:10px 10px 0 0;
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  background:#ff9933;
+  color:white;
+  cursor:pointer;
+}
+.hero-img img{
+  width:320px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* SECTION */
+section{padding:60px 40px;text-align:center;}
+
+/* ABOUT */
+.about{background:#dff5e3;}
+.about img{width:280px;margin:20px 0;border-radius:15px;}
+
+/* GALLERY */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:30px;
+}
+
+.card{
+  background:#ffffff;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+  transition:0.3s;
+}
+.card:hover{transform:translateY(-6px);}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin:12px 0 5px;
+  color:#138808;
+}
+
+.card p{
+  font-size:14px;
+  padding:0 12px 12px;
+}
+
+/* SLIDESHOW */
+.slideshow{
+  max-width:500px;
+  margin:40px auto;
+}
+.slideshow img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* QUIZ */
+.quiz-box{
+  background:#e6f7ea;
+  max-width:420px;
+  margin:auto;
+  padding:25px;
+  border-radius:20px;
+}
+.quiz-box button{
+  display:block;
+  width:100%;
+  margin:10px 0;
+  padding:10px;
+  border:none;
+  background:#138808;
+  color:white;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+/* VIVA */
+.viva{
+  background:#dff5e3;
+  text-align:left;
+  max-width:800px;
+  margin:auto;
+  border-radius:20px;
+}
+.viva ul{padding:20px;}
+.viva li{margin:10px 0;}
+
+/* ANIMATION */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+.reveal.show{opacity:1;transform:none;}
+
+/* FOOTER */
+footer{
+  background:#138808;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🇮🇳 Republic Day</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero reveal" id="home">
+  <div class="hero-text">
+    <h1>Wishes for Happy Republic Day<br>Jai Hind Jai Bharat 🇮🇳</h1>
+    <p>Unity • Constitution • Freedom</p>
+    <div class="hero-buttons">
+      <button onclick="goTo('gallery')">Gallery</button>
+      <button onclick="goTo('quiz')">Quiz</button>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="images/home-flag.jpg">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about reveal" id="about">
+<h2>About Republic Day</h2>
+<img src="images/about-army.jpg">
+<p>
+Republic Day marks the day when the Constitution of India came into effect on 26 January 1950.
+</p>
+</section>
+
+<!-- GALLERY -->
+<section class="reveal" id="gallery">
+<h2>Republic Day Celebrations 🇮🇳</h2>
+
+<div class="gallery-grid">
+
+  <div class="card">
+    <img src="celebrations/parade.jpg">
+    <h3>Republic Day Parade</h3>
+    <p>Grand parade held in New Delhi on 26 January.</p>
+  </div>
+
+  <div class="card">
+    <img src="celebrations/school.jpg">
+    <h3>School Celebrations</h3>
+    <p>Patriotic songs, dances and speeches by students.</p>
+  </div>
+
+  <div class="card">
+    <img src="celebrations/college.jpg">
+    <h3>College Celebrations</h3>
+    <p>Cultural programs and events organised by students.</p>
+  </div>
+
+  <div class="card">
+    <img src="celebrations/redfort.jpg">
+    <h3>Flag Hoisting</h3>
+    <p>National flag hoisted with pride at Red Fort.</p>
+  </div>
+
+  <div class="card">
+    <img src="celebrations/cultural.jpg">
+    <h3>Cultural Programs</h3>
+    <p>Unity in diversity shown through performances.</p>
+  </div>
+
+</div>
+
+<!-- SLIDESHOW -->
+<div class="slideshow">
+  <img id="slide" src="celebrations/slideshow/slide1.jpg">
+</div>
+</section>
+
+<!-- QUIZ -->
+<section class="reveal" id="quiz">
+<h2>Republic Day Quiz 🧠</h2>
+<div class="quiz-box">
+  <h3 id="q"></h3>
+  <div id="opt"></div>
+  <p id="res"></p>
+</div>
+</section>
+
+<!-- VIVA -->
+<section class="viva reveal">
+<h2>Viva Explanation Points 📝</h2>
+<ul>
+<li>Republic Day is celebrated on 26 January every year.</li>
+<li>It marks the adoption of the Indian Constitution.</li>
+<li>The national parade is held at Kartavya Path, New Delhi.</li>
+<li>Schools and colleges celebrate with cultural programs.</li>
+<li>It represents unity, democracy and national pride.</li>
+</ul>
+</section>
+
+<footer>
+© 2026 Happy Republic Day | Designed by Somya 🇮🇳
+</footer>
+
+<script>
+function goTo(id){
+  document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+
+/* SLIDESHOW */
+let slides=["slide1.jpg","slide2.jpg","slide3.jpg"];
+let s=0;
+setInterval(()=>{
+  s=(s+1)%slides.length;
+  document.getElementById("slide").src="celebrations/slideshow/"+slides[s];
+},2500);
+
+/* QUIZ */
+const quiz=[
+{q:"Republic Day is on?",o:["26 Jan","15 Aug","2 Oct"],a:0},
+{q:"Indian Constitution year?",o:["1950","1947","1962"],a:0},
+{q:"National Flag colors?",o:["3","2","4"],a:0},
+{q:"Parade held in?",o:["Delhi","Mumbai","Kolkata"],a:0},
+{q:"Father of Constitution?",o:["Ambedkar","Gandhi","Nehru"],a:0}
+];
+let i=0;
+function load(){
+  q.innerText=quiz[i].q;
+  opt.innerHTML="";
+  quiz[i].o.forEach((x,j)=>{
+    let b=document.createElement("button");
+    b.innerText=x;
+    b.onclick=()=>check(j);
+    opt.appendChild(b);
+  });
+}
+function check(a){
+  if(a===quiz[i].a){
+    res.innerText="🎉 Correct";
+    i++;
+    if(i<quiz.length)setTimeout(load,800);
+    else res.innerText="🇮🇳 Quiz Completed!";
+  }else res.innerText="❌ Try Again";
+}
+load();
+
+/* SCROLL ANIMATION */
+window.addEventListener("scroll",()=>{
+ document.querySelectorAll(".reveal").forEach(e=>{
+  if(e.getBoundingClientRect().top<window.innerHeight-50)
+   e.classList.add("show");
+ });
+});
+</script>
+
+</body>
+</html>
